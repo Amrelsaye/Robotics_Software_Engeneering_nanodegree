@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen">
+    <param name="scale_linear" value="0.5" type="double"/>
+    <param name="scale_angular" value="1.0" type="double"/>
+    <remap from="my_robot/cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>
