@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+       <arg name="world_file" value="$(find my_robot)/worlds/amr.world"/>
+    </include>
+</launch>
